@@ -5,6 +5,7 @@ var mongoose         = require("mongoose");
 var indexRoutes      = require("./routes/index.js");
 
 var app = express();
+app.use(express.static('public'))
 app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use("/",indexRoutes);
