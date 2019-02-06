@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>AcadShare</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="/">AcadShare</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/practice">Practice</a>
+                 </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/interviews">Interviews</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/chat">Chat</a>
+               </li>
+               
+            </ul>
+         </div>
+      </nav>
+
+
+      <div class="container pb-5 pt-5 border-bottom" style = "margin-top: 50px ; margin-bottom : 25px">
+            <div class="row align-items-center">
+                  <h1><a id="Interview_Preparation_0"></a>Interview Preparation</h1>
+                  <p>You can crack any Interview if you are preparing yourself in a well organised manner. 
+                  There are lots of Data Structure and Algorithm problems on internet and it is quite 
+                  impossible for a person to practice all of them. So it is really important that you 
+                  practice a list of few problems which are really important and covers almost every concepts.
+                  </p>
+                  <p>I have tried my best to sort all those problems for you and ordered them as well. 
+                     I hope if you follow my list and study in the same order in which i have given,
+                      it will surely help you prepare very well for the Job Interview in your 2 months
+                       vacation.
+                  </p> 
+            </div>
+      </div>
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+                  <h2><a id="Table_of_Contents_5"></a>Table of Contents</h2>
+                  <ul>
+                  <li>
+                  <p><a href="#linkedlist">LinkedList</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#stack">Stack</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#queue">Queue</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#binary-tree">Binary Tree</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#binary-search-tree">Binary Search Tree</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#heap-and-priority-queue">Heap and Priority Queue</a></p>
+                  </li>
+                  <li>
+                  <p><a href="#dynamic-programming">Dynamic Programming</a></p>
+                  </li>
+                  </ul>
+      </div>
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="LinkedListhttpsgithubcomashurayinterviewroomtreemasterLinkedList_22"></a><a href="https://github.com/ashuray/interviewroom/tree/master/LinkedList">LinkedList</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Find middle element in a linked list</td>
+            <td><a href="https://leetcode.com/problems/middle-of-the-linked-list/">LeetCode</a> , <a href="https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Remove n’th node from end of a linked list</td>
+            <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/remove-nth-node-from-list-end/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Intersection Point in Y shaped linked list</td>
+            <td><a href="https://leetcode.com/problems/intersection-of-two-linked-lists/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/intersection-of-linked-lists/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Reverse a linked list</td>
+            <td><a href="https://leetcode.com/problems/reverse-linked-list/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/reverse-linked-list/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Check if a linked list is Palindrome</td>
+            <td><a href="https://leetcode.com/problems/palindrome-linked-list/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/palindrome-list/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>Rotate a LinkedList</td>
+            <td><a href="https://leetcode.com/problems/rotate-list/">LeetCode</a> ,           <a href="https://www.interviewbit.com/problems/rotate-list/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>Reverse linked list in a group of given size k</td>
+            <td><a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/k-reverse-linked-list/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>Detect and Remove Loop in a linked list</td>
+            <td><a href="https://leetcode.com/problems/linked-list-cycle-ii/">LeetCode</a> ,   <a href="https://www.interviewbit.com/problems/list-cycle/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td>Find length of the Loop in a linked list</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/find-length-of-loop/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>10</td>
+            <td>Segregate even and odd positioned nodes in a linked list</td>
+            <td><a href="https://leetcode.com/problems/odd-even-linked-list/">LeetCode</a> , <a href="https://practice.geeksforgeeks.org/problems/rearrange-a-linked-list/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>11</td>
+            <td>Segregate even and odd valued nodes in a linked list</td>
+            <td><a href="https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/">GFG</a></td>
+            </tr>
+            <tr>
+            <td>12</td>
+            <td>Clone a linked list with next and random pointer</td>
+            <td><a href="https://leetcode.com/problems/copy-list-with-random-pointer/">LeetCode</a> , <a href="https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>13</td>
+            <td>Reorder List L1-&gt;L2-&gt;…Ln to L1-&gt;Ln-&gt;L2-&gt;Ln-1…</td>
+            <td><a href="https://leetcode.com/problems/reorder-list/">LeetCode</a> ,          <a href="https://www.interviewbit.com/problems/reorder-list/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>14</td>
+            <td>Delete N nodes after M nodes of a linked list</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>15</td>
+            <td>Merge K sorted list</td>
+            <td><a href="https://leetcode.com/problems/merge-k-sorted-lists/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/merge-two-sorted-lists/">InterviewBit</a> , <a href="https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>16</td>
+            <td>Add two numbers represented by a linked list</td>
+            <td><a href="https://leetcode.com/problems/add-two-numbers/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/add-two-numbers-as-lists/">InterviewBit</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+ 
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="StackhttpsgithubcomashurayinterviewroomtreemasterStack_45"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Stack">Stack</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Valid Parentheses</td>
+            <td><a href="https://leetcode.com/problems/valid-parentheses/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Length of longest valid Parentheses</td>
+            <td><a href="https://leetcode.com/problems/longest-valid-parentheses/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Next Greater Element</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/next-larger-element/0">GFG</a> , <a href="https://leetcode.com/problems/next-greater-element-ii/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Nearest Smaller Element</td>
+            <td><a href="https://www.interviewbit.com/problems/nearest-smaller-element/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Trapping Rain Water</td>
+            <td><a href="https://leetcode.com/problems/trapping-rain-water/">LeetCode</a> ,                 <a href="https://www.interviewbit.com/problems/rain-water-trapped/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>Largest Rectangle in a Histogram</td>
+            <td><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">LeetCode</a> ,     <a href="https://www.interviewbit.com/problems/largest-rectangle-in-histogram/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>Min Stack</td>
+            <td><a href="https://leetcode.com/problems/min-stack/">LeetCode</a> ,                           <a href="https://www.interviewbit.com/problems/min-stack/">InterviewBit</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="QueuehttpsgithubcomashurayinterviewroomtreemasterQueue_58"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Queue">Queue</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Generate binary numbers from 1 to n</td>
+            <td><a href="https://www.geeksforgeeks.org/interesting-method-generate-binary-numbers-1-n/">GFG</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Minimum time required to rot all Oranges</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/rotten-oranges/0">GFG</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>First non repeating character in a stream</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream/0">GFG</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Circular tour</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/circular-tour/1">GFG</a> ,      <a href="https://leetcode.com/problems/gas-station/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Sliding Window Maximum</td>
+            <td><a href="https://leetcode.com/problems/sliding-window-maximum/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/sliding-window-maximum/">InterviewBit</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+      
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="Binary_TreehttpsgithubcomashurayinterviewroomtreemasterTree_68"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Tree">Binary Tree</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Determine Height of a binary tree</td>
+            <td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/max-depth-of-binary-tree/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Inorder Traversal</td>
+            <td><a href="https://www.interviewbit.com/problems/inorder-traversal/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Preorder Traversal</td>
+            <td><a href="https://www.interviewbit.com/problems/preorder-traversal/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Postorder Traversal</td>
+            <td><a href="https://www.interviewbit.com/problems/postorder-traversal/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Level Order Traversal</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>Level Order Traversal in Spiral Form</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>Left and Right View of Binary Tree</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-right-side-view/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>Diameter of a Binary tree</td>
+            <td><a href="https://leetcode.com/problems/diameter-of-binary-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td>Populating Next Right Pointers in Each Node</td>
+            <td><a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/">LeetCode</a>  , <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>10</td>
+            <td>Check if a Binary Tree is Sum Tree</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/sum-tree/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>11</td>
+            <td>Check if a Binary Tree is Balanced</td>
+            <td><a href="https://leetcode.com/problems/balanced-binary-tree/">LeetCode</a>   , <a href="https://leetcode.com/problems/balanced-binary-tree/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>12</td>
+            <td>Check if a Binary Tree is BST</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/check-for-bst/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>13</td>
+            <td>Convert a given Binary Tree into its mirror Tree</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/mirror-tree/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>14</td>
+            <td>Check if two Binary Tree are mirror image of each other</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/check-mirror-in-n-ary-tree/0">GFG</a></td>
+            </tr>
+            <tr>
+            <td>15</td>
+            <td>Check if a Binary Tree is Symmetric Binary Tree</td>
+            <td><a href="https://www.interviewbit.com/problems/symmetric-binary-tree/">InterviewBit</a>  , <a href="https://leetcode.com/problems/symmetric-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>16</td>
+            <td>Invert a Binary Tree</td>
+            <td><a href="https://www.interviewbit.com/problems/invert-the-binary-tree/">InterviewBit</a> , <a href="https://leetcode.com/problems/invert-binary-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>17</td>
+            <td>Vertical order Traversal</td>
+            <td><a href="https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>18</td>
+            <td>Top View Of Binary Tree</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>19</td>
+            <td>Bottom View of Binary Tree</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>20</td>
+            <td>Check if Root to Leaf path sum exist</td>
+            <td><a href="https://www.interviewbit.com/problems/path-sum/">InterviewBit</a> ,                     <a href="https://leetcode.com/problems/path-sum/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>21</td>
+            <td>All Root to Leaf path sum</td>
+            <td><a href="https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/">InterviewBit</a> ,   <a href="https://leetcode.com/problems/path-sum-ii/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>22</td>
+            <td>Maximum path sum from leaf to leaf</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/maximum-path-sum/1">GFG</a></td>
+            </tr>
+            <tr>
+            <td>23</td>
+            <td>Maximum path sum from any node to any node</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>24</td>
+            <td>Least Common Ancestor</td>
+            <td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>25</td>
+            <td>Find the distance between two nodes of a Binary Tree</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1">GFG</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+      
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="Binary_Search_TreehttpsgithubcomashurayinterviewroomtreemasterTree_98"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Tree">Binary Search Tree</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Insert a Node in BST</td>
+            <td><a href="https://leetcode.com/problems/insert-into-a-binary-search-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Delete a Node from BST</td>
+            <td><a href="https://leetcode.com/problems/delete-node-in-a-bst/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Lowest common ancestor in BST</td>
+            <td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Inorder Successor in BST</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Kth Smallest node in BST</td>
+            <td><a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/">LeetCode</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+      
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="Heap_and_Priority_QueuehttpsgithubcomashurayinterviewroomtreemasterHeap20and20Priority20Queue_108"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Heap%20and%20Priority%20Queue">Heap and Priority Queue</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Median in a stream of integers</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0">GFG</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Top K Frequent Elements in an Array</td>
+            <td><a href="https://leetcode.com/problems/top-k-frequent-elements/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Kth Largest Element in a Stream</td>
+            <td><a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Sort a nearly sorted (or K sorted) array</td>
+            <td><a href="https://www.geeksforgeeks.org/nearly-sorted-algorithm/">GFG</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Kth Smallest Element in a Sorted Matrix</td>
+            <td><a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/">LeetCode</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+
+      <div class="container pb-5 border-bottom" style = "margin-bottom : 25px">
+            <h2><a id="Dynamic_ProgramminghttpsgithubcomashurayinterviewroomtreemasterDynamic20Programming_119"></a><a href="https://github.com/ashuray/interviewroom/tree/master/Dynamic%20Programming">Dynamic Programming</a></h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+            <th><strong>ID</strong></th>
+            <th><strong>PROBLEM STATEMENT</strong></th>
+            <th><strong>PROBLEM LINK</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td>Climbing Stairs</td>
+            <td><a href="https://leetcode.com/problems/climbing-stairs/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Coin Sum Infinite</td>
+            <td><a href="https://www.interviewbit.com/problems/coin-sum-infinite/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Min Cost Climbing Stairs</td>
+            <td><a href="https://leetcode.com/problems/min-cost-climbing-stairs/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>Rod Cutting Problem</td>
+            <td><a href="https://www.geeksforgeeks.org/cutting-a-rod-dp-13/">GFG</a></td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>Longest Common Subsequence</td>
+            <td><a href="https://leetcode.com/problems/delete-operation-for-two-strings/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>Print Longest Common Subsequence</td>
+            <td><a href="https://www.hackerrank.com/challenges/dynamic-programming-classics-the-longest-common-subsequence/problem">Hackerrank</a></td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>Longest Increasing Subsequence</td>
+            <td><a href="https://leetcode.com/problems/longest-increasing-subsequence/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/longest-increasing-subsequence/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>Edit Distance</td>
+            <td><a href="https://leetcode.com/problems/edit-distance/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td>Longest Common Substring</td>
+            <td><a href="https://leetcode.com/problems/maximum-length-of-repeated-subarray/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>10</td>
+            <td>Maximum Sum Contiguous Subarray</td>
+            <td><a href="https://leetcode.com/problems/maximum-subarray/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>11</td>
+            <td>Maximum Sum without adjacent Element(House Robber)</td>
+            <td><a href="https://leetcode.com/problems/house-robber/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>12</td>
+            <td>Maximum Product Subarray</td>
+            <td><a href="https://leetcode.com/problems/maximum-product-subarray/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>13</td>
+            <td>Find minimum number of coins that make a given value</td>
+            <td><a href="https://leetcode.com/problems/coin-change/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>14</td>
+            <td>Min Cost Path</td>
+            <td><a href="https://www.interviewbit.com/problems/min-sum-path-in-matrix/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>15</td>
+            <td>Maximal Rectangle</td>
+            <td><a href="https://leetcode.com/problems/maximal-rectangle/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/max-rectangle-in-binary-matrix/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>16</td>
+            <td>Minimum Jump to reach End</td>
+            <td><a href="https://leetcode.com/problems/jump-game-ii/">LeetCode</a> ,      <a href="https://www.interviewbit.com/problems/min-jumps-array/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>17</td>
+            <td>0 - 1 Knapsack Problem</td>
+            <td><a href="https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0">GFG</a></td>
+            </tr>
+            <tr>
+            <td>18</td>
+            <td>Partition Equal Subset Sum</td>
+            <td><a href="https://leetcode.com/problems/partition-equal-subset-sum/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>19</td>
+            <td>Longest Palindromic Subsequence</td>
+            <td><a href="https://leetcode.com/problems/longest-palindromic-subsequence/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>20</td>
+            <td>Longest Bitonic Subsequence</td>
+            <td><a href="https://www.interviewbit.com/problems/length-of-longest-subsequence/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>21</td>
+            <td>Word Break</td>
+            <td><a href="https://leetcode.com/problems/word-break/">LeetCode</a> ,              <a href="https://www.interviewbit.com/problems/word-break/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>22</td>
+            <td>Interleaving String</td>
+            <td><a href="https://leetcode.com/problems/interleaving-string/">LeetCode</a> , <a href="https://www.interviewbit.com/problems/interleaving-strings/">InterviewBit</a></td>
+            </tr>
+            <tr>
+            <td>23</td>
+            <td>Matrix Chain Multiplication</td>
+            <td><a href="https://leetcode.com/problems/burst-balloons/">LeetCode</a></td>
+            </tr>
+            <tr>
+            <td>24</td>
+            <td>Palindrome Partitioning</td>
+            <td><a href="https://leetcode.com/problems/palindrome-partitioning-ii/">LeetCode</a></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+          
+
+      <div class="jumbotron text-center" style="margin-bottom:0">
+         <p>  Designed and built by 
+           <a href="https://www.linkedin.com/in/ashuray/">ashutosh</a>
+            and 
+           <a href="https://www.linkedin.com/in/abhishek-karn-022b88125/">abhishek.</a>
+           Contribute on 
+            <a href="https://github.com/ashuray/AcadShare">GitHub.</a> 
+          </p>
+          
+          <p>
+              © 2019 Copyright: 
+              <a href="https://github.com/ashuray">ashuray</a>
+          </p>
+       </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+  </html>
