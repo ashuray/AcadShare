@@ -10,6 +10,7 @@ var app = express();
 app.use(express.static('public'))
 app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({extended: true}));
+mongoose.connect("mongodb://localhost/acadshare");
 app.use("/",indexRoutes);
 app.use("/practice",practiceRoutes);
 app.use("/interviews",interviewRoutes);

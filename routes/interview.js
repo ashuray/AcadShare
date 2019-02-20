@@ -5,4 +5,4 @@ router.get("/",function(req,res){
     res.render("interview/index.ejs");
 });
 
-module.exports = router;
+module.exports = router; 
