@@ -1,52 +1,154 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <title>AcadShare</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="/">AcadShare</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/practice">Practice</a>
-                 </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/interviews">Interviews</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/chat">Chat</a>
-               </li>
-               
-            </ul>
-         </div>
-      </nav>
-
-        
-
-      <div class="jumbotron text-center" style="margin-bottom:0">
-         <p>  Designed and built by 
-           <a href="https://www.linkedin.com/in/ashuray/">ashutosh</a>
-            and 
-           <a href="https://www.linkedin.com/in/abhishek-karn-022b88125/">abhishek.</a>
-           Contribute on 
-            <a href="https://github.com/ashuray/AcadShare">GitHub.</a> 
-          </p>
-          
-          <p>
-              © 2019 Copyright: 
-              <a href="https://github.com/ashuray">ashuray</a>
-          </p>
-       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>AcadShare</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">AcadShare</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/practice">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/interviews">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chat">Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid" style="margin-top:30px">
+            <div class = "row">
+                <div class = "col-sm-3">
+                    <a href="/interviews/new" class="btn btn-outline-primary">Upload Your Interview Experience</a>
+                </div>
+                <div class = "col-sm-6">
+                    <% var dbSize = interviews.length; %>
+                    <% for(var i = dbSize-1 ; i >= 0 ; i--) { %>
+                    <div class="card" style="margin-bottom:30px">
+                        <div class="card-header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <h4> <%= interviews[i].companyName %>   <%= interviews[i].jobProfile %>   <%=interviews[i].employmentType%></h4>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="dropdown">
+                                            <i class="material-icons d-inline-block align-top">reorder</i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="/interviews/<%= interviews[i]._id %>/edit">Edit</a>
+                                                <form action="/interviews/<%= interviews[i]._id %>?_method=DELETE" method="POST">
+                                                    <button class="dropdown-item" type="submit">Delete</button>
+            
+                                                </form>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                                <%- interviews[i].description %>  
+                        </div>
+                    </div>
+                    <% };%>
+                </div>
+                <div class = "col-sm-3">
+                    <div class="card">
+                       <div class = "card-header text-center">
+                               <h5>Companies</h5>
+                       </div>
+                       <div class="card-body">
+                        <p class="card-text">
+                                
+<span class = "p-1">
+        <a href="interviews/tag/amazon">Amazon</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/blackbuck ">BlackBuck</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/browserstack">Browser Stack</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/cdot">C-DOT</a>
+</span>
+<span class = "p-1">
+        <a  href="interviews/tag/codenation">CodeNation</a>
+</span>
+<span class = "p-1">
+        <a  href="interviews/tag/creditsuisse">Credit Suisse</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/cognizant">Cognizant</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/deshaw">DE Shaw</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/directi">Directi</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/endurance">Endurance</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/envestnetyodlee">Envestnet Yodlee</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/factset">FactSet</a>
+</span>
+<span class = "p-1">
+        <a  href="interviews/tag/flipkart">Flipkart</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/goldmansachs">Goldman Sachs</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/grab">Grab</a>
+</span>
+<span class = "p-1">
+        <a  href="interviews/tag/hackerrank">HackerRank</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/jpmorganchase">JPMorgan Chase</a>
+</span>
+<span class = "p-1">
+        <a href="interviews/tag/microsoft">Microsoft</a>
+</span>                       
+                        </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>  Designed and built by 
+                <a href="https://www.linkedin.com/in/ashuray/">ashutosh</a>
+                and 
+                <a href="https://www.linkedin.com/in/abhishek-karn-022b88125/">abhishek.</a>
+                Contribute on 
+                <a href="https://github.com/ashuray/AcadShare">GitHub.</a> 
+            </p>
+            <p>
+                © 2019 Copyright: 
+                <a href="https://github.com/ashuray">ashuray</a>
+            </p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-  </html>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+
+        <title>AcadShare</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">AcadShare</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/practice">Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/interviews">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chat">Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="innerBody" style="margin-top:60px;">
+        <form style="margin-top: 60px; margin-left: 25%; width:50%;" action="/interviews" method="POST">
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">NAME OF THE COMPANY</button></label>
+                <input type="text" class="form-control" placeholder="Amazon" name="companyName">
+            </div>
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">EMPLOYMENT TYPE</button></label>
+                <input type="text" class="form-control" placeholder="Internship , Full-Time" name="employmentType">
+            </div>
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">JOB PROFILE</button></label>
+                <input type="text" class="form-control" placeholder="Data Analyst , SDE " name="jobProfile">
+            </div>
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">INTERVIEW DATE</button></label>
+                <input type="date" class="form-control" placeholder="15-04-2018" name="interviewDate">
+            </div>
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">CAMPUS TYPE</button></label>
+                <select class="form-control" name="campusType">
+                    <option>On Campus</option>
+                    <option>Off Campus</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><button type="button" class="btn btn-secondary">DESCRIPTION</button></label>
+                <textarea class = "form-control" name="description" id="editor"></textarea>
+                <script>
+                        ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .then( editor => {
+                                        console.log( editor );
+                                } )
+                                .catch( error => {
+                                        console.error( error );
+                                } );
+                </script>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-bottom : 50px">Submit</button>
+        </form>
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>  Designed and built by 
+                <a href="https://www.linkedin.com/in/ashuray/">ashutosh</a>
+                and 
+                <a href="https://www.linkedin.com/in/abhishek-karn-022b88125/">abhishek.</a>
+                Contribute on 
+                <a href="https://github.com/ashuray/AcadShare">GitHub.</a> 
+            </p>
+            <p>
+                © 2019 Copyright: 
+                <a href="https://github.com/ashuray">ashuray</a>
+            </p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
